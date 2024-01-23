@@ -1,0 +1,1 @@
+**You can also do npm init -y to skip all the questions.**
