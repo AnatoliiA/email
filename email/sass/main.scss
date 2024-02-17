@@ -1,0 +1,46 @@
+//v:* {
+//  behavior: url(#default#VML)
+//}
+@import "element/capture";
+@import "head/typograchy";
+@import "head/variables";
+@import "base/base";
+
+//h4 {
+//  font-size: 18px;
+//  line-height: 21px;
+//  padding-top: 10px;
+//  padding-bottom: 12px;
+//}
+//
+//h5 {
+//  font-size: 16px;
+//  line-height: 21px;
+//  padding-top: 10px;
+//  padding-bottom: 8px;
+//}
+//
+//h6 {
+//  font-size: 14px;
+//  line-height: 21px;
+//  padding-top: 10px;
+//  padding-bottom: 8px;
+//}
+
+.sectionHeading {
+  color: #ffffff;
+  background-color: #ece9e9;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  max-width: $max-width;
+}
+
+
+
+
+
+.container800 {
+  width: 800px;
+  margin: 0;
+}
