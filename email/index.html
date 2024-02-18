@@ -79,7 +79,6 @@
 
         .intro{
           line-height:1.2;
-          margin-top:10px;
           text-align: left;
           font-size:22px;
           font-family:Georgia,Arial,sans-serif;
@@ -87,13 +86,20 @@
         }
 
         .down-pass{
-            transform: translateY(6rem);
+            transform: translateX(1rem);
             word-wrap: break-word;
+            /*overflow: auto;*/
+        }
+
+        .passdiv{
+              transform: translateY(6rem);
+              overflow: hidden;
         }
 
         .float-pass{
             float: left;
         }
+
         @media all and (max-width: 599px) {
             .container600 {
                 width: 100%;
@@ -101,17 +107,13 @@
                 mso-line-height-rule: exactly;
             }
 
-            .intro-image {
-                max-width: 100%; /* Ensure the image is responsive */
-            }
-
             img {
                 display: none;
             }
 
             h1 {
-                padding-top: 0px;
-                padding-bottom: 0px;
+                padding-top: 0;
+                padding-bottom: 0;
             }
 
             p {
@@ -125,41 +127,41 @@
             .intro {
                 font-size: 14px;
                 line-height: 1.2;
-                text-align: left;
-                margin-top: 5px;
-                padding-top: 0;
             }
+
             .down-pass{
-              overflow-x: hidden;
+              overflow: hidden;
+               transform: translateX(1rem);
+            }
+
+            .passdiv{
+              transform: translateY(0rem);
+              overflow: auto;
             }
         }
 
         @media all and (max-width: 899px) {
-            .intro {
-                font-size: 14px;
-                line-height: 1.2;
-                text-align: left;
-                margin-top: 10px;
-                overflow-x: hidden;
-                transform: translateY(5.5rem);
-            }
-
-            #cord {
-                width: 30%;
-            }
-
             #image1 {
                 width: 100%;
             }
 
-            .felitation {
-                font-size: 18px;
-                text-indent: 0rem
+            .intro{
+              line-height:1.2;
+              text-align: left;
+              font-size:22px;
+              font-family:Georgia,Arial,sans-serif;
             }
 
             .down-pass{
-              transform: translateX(2rem);
+              overflow: hidden;
+              transform: translateX(1rem);
             }
+
+            .passdiv{
+              transform: translateX(2rem);
+              overflow: auto;
+            }
+
         }
 
         @media all and (max-width: 1000px) {
@@ -167,18 +169,22 @@
                 width: 30%;
                 font-size: 18px;
             }
+
            .intro{
               line-height:1.2;
-              margin-top:10px;
-              text-align: left;
-              font-size:22px;
+              font-size:20px;
               font-family:Georgia,Arial,sans-serif;
             }
 
            .down-pass{
-              transform: translateY(2rem);
-              overflow-x: hidden;
-            }
+              overflow: hidden;
+              transform: translateX(1rem);
+           }
+
+           .passdiv{
+              transform: translateY(6rem);
+              overflow: auto;
+           }
         }
     </style>
 
@@ -313,18 +319,20 @@
                                             color: #100f0f;
                                             padding: 0;
                                             margin: 0;">
-                                <div class="float-pass" style="padding-top: 30px;
-                                            margin: 0 0 0 2rem; width: 30%;">
-                                    <img alt="" width="200" height="200" src="capt.jpg"/>
-                                </div>
                                 <div class="down-pass" style="margin: 0; width: 100%;">
-                                    <h3 class="intro" style="padding: 0 0 0 1rem">
-                                        Object: Candidature spontanée
-                                    </h3>
-                                    <h3 class="intro" style="padding: 0 0 0 1rem">
-                                        Installateur de panneaux photovoltaïques
-                                    </h3>
-                                    <h3 class="intro" style="padding: 0 0 0 1rem">Anatolii Kamarali</h3>
+                                     <div class="float-pass" style="padding-top: 30px;
+                                            margin: 0 0 0 1rem; width: 30%;">
+                                    <img alt="" width="200" height="200" src="capt.jpg"/>
+                                    </div>
+                                    <div class="passdiv">
+                                        <h3 class="intro" style="padding: 0.1rem 0 0 1rem">
+                                            Object: Candidature spontanée
+                                        </h3>
+                                        <h3 class="intro" style="padding: .1rem 0 0 1rem">
+                                            Installateur de panneaux photovoltaïques
+                                        </h3>
+                                        <h3 class="intro" style="padding: .1rem 0 0 1rem">Anatolii Kamarali</h3>
+                                    </div>
                                 </div>
                             </td>
                         </tr>

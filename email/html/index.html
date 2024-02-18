@@ -23,11 +23,6 @@
         </noscript>
     </xml>
     <![endif]-->
-      <style data-embed>
-        .client-specific {
-            color: blue;
-        }
-    </style>
     <style data-embed type="text/css">
         html,
         body,
@@ -69,27 +64,27 @@
             font-size: 21px;
         }
 
-        .intro-mso{
-          line-height:1.2;
-          margin-top:10px;
-          margin-left: 15px;
-          text-align: left;
-          font-size: 18px;
-          mso-line-height-rule: exactly;
-          //font-family:Georgia,Arial,sans-serif;
-          padding: 10px 20px;
-        }
         .intro{
           line-height:1.2;
           margin-top:10px;
           text-align: left;
           font-size:22px;
           font-family:Georgia,Arial,sans-serif;
-          transform: translateX(2.5em)
+          overflow-wrap: break-word;
         }
 
         .down-pass{
-            transform: translateY(5rem);
+            word-wrap: break-word;
+            /*overflow: auto;*/
+        }
+
+        .passdiv{
+              transform: translateY(6rem);
+              overflow: hidden;
+        }
+
+        .float-pass{
+            float: left;
         }
 
         @media all and (max-width: 599px) {
@@ -116,41 +111,34 @@
                 font-size: 14px;
                 line-height: 16px;
                 margin: 0 10px;
-                background-color: darkmagenta;
             }
-
+            .float-pass{
+                float: none;
+            }
             .intro {
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 1.2;
                 text-align: left;
-                padding-top: 0px;
-                margin-top: 0px;
-                transform: translateX(0em);
+                margin-top: 5px;
+                padding-top: 0;
             }
-
-            .felitation {
-                font-size: 16px;
-            }
-            .intro-mso{
-              line-height:1.2;
-              margin: 2rem 0 1rem 0;
-              text-align: left;
-              font-size: 16px;
-              mso-line-height-rule: exactly;
-              padding: 10px 20px;
-            }
-
             .down-pass{
-              transform: translateY(0);
+              overflow: hidden;
+            }
+
+            .passdiv{
+              transform: translateX(6rem);
+              overflow: auto;
             }
         }
 
         @media all and (max-width: 899px) {
             .intro {
-                font-size: 18px;
+                font-size: 14px;
                 line-height: 1.2;
                 text-align: left;
                 margin-top: 10px;
+                overflow-x: hidden;
             }
 
             #cord {
@@ -163,12 +151,19 @@
 
             .felitation {
                 font-size: 18px;
+                text-indent: 0rem
             }
 
             .down-pass{
-              transform: translateY(0rem);
-              transform: translateX(2rem);
+              overflow: hidden;
+              transform: translateX(1rem);
             }
+
+            .passdiv{
+              transform: translateX(2rem);
+              overflow: auto;
+            }
+
         }
 
         @media all and (max-width: 1000px) {
@@ -177,9 +172,23 @@
                 font-size: 18px;
             }
 
-            .intro {
-                /*color: green;*/
+           .intro{
+              line-height:1.2;
+              margin-top:10px;
+              text-align: left;
+              font-size:22px;
+              font-family:Georgia,Arial,sans-serif;
             }
+
+           .down-pass{
+              overflow: hidden;
+              transform: translateX(1rem);
+           }
+
+           .passdiv{
+              transform: translateY(6rem);
+              overflow: auto;
+           }
         }
     </style>
 
@@ -210,6 +219,16 @@
             max-width: 800px;
             margin: 0;
             background-color: red;
+        }
+        .intro-mso{
+          line-height:1.2;
+          margin-top:10px;
+          margin-left: 15px;
+          text-align: left;
+          font-size: 18px;
+          mso-line-height-rule: exactly;
+          //font-family:Georgia,Arial,sans-serif;
+          padding: 10px 20px;
         }
     </style>
     <![endif]-->
@@ -246,7 +265,7 @@
     <tr>
         <td style="padding: 0">
 <![endif]-->
-<table align="center" style="background-color: #fafdfe; border-collapse: collapse; border-spacing: 0; color: #3d3d3d; font-family: Helvetica, Arial, sans-serif; margin: 0 auto; max-width: 800px; width: 100%;">
+<table align="center" style="background-color: #fafdfe; border-collapse: collapse; border-spacing: 0; color: #3d3d3d; font-family: Helvetica, Arial, sans-serif; margin: 0 auto; max-width: 600px; width: 100%;">
     <tr>
         <td style="border-collapse: collapse; text-align: left; width: 100%;">
             <table width="100%" role="presentation" style="border-collapse: collapse; border-spacing: 0; min-width: 80%;">
@@ -287,17 +306,20 @@
                     <table style="border-collapse: collapse; border-spacing: 0;">
                         <tr>
                             <td width="60%" style="background-color: #ffffff; border-collapse: collapse; color: #100f0f; margin: 0; padding: 0;">
-                                <div style="float: left; padding-top: 30px; margin: 10px 2rem 10px 2rem; width: 30%;">
-                                    <img alt width="200" height="200" src="capt.jpg" style="-ms-interpolation-mode: bicubic; border: 0;">
-                                </div>
                                 <div class="down-pass" style="margin: 0; width: 100%;">
-                                    <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px;">
-                                        Object: Candidature spontanée
-                                    </h3>
-                                    <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px;">
-                                        Installateur de panneaux photovoltaïques
-                                    </h3>
-                                    <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px;">Anatolii Kamarali</h3>
+                                     <div class="float-pass" style="padding-top: 30px;
+                                            margin: 0 0 0 1rem; width: 30%;">
+                                    <img alt width="200" height="200" src="capt.jpg" style="-ms-interpolation-mode: bicubic; border: 0;">
+                                    </div>
+                                    <div class="passdiv">
+                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: 0 0 0 1rem;">
+                                            Object: Candidature spontanée
+                                        </h3>
+                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: 0 0 0 1rem;">
+                                            Installateur de panneaux photovoltaïques
+                                        </h3>
+                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: 0 0 0 1rem;">Anatolii Kamarali</h3>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -308,13 +330,10 @@
                     <td width="100%" style="background-color: #ffffff; border-collapse: collapse; margin: 0; max-width: 800px; padding-bottom: 20px; padding-top: 40px;">
                         <table width="100%" role="presentation" style="border-collapse: collapse; border-spacing: 0;">
                             <tr>
-                                <td width="60%" style="border-collapse: collapse; text-align: left;">
-                                    <p class="felitation" style="text-indent: 2rem">
+                                <td width="60%" style="border-collapse: collapse; margin: 0; text-align: left;">
+                                    <p style="margin: 0 0 0 2rem; text-indent: 5%;">
                                         Bonjour {sex},
                                     </p>
-                                </td>
-                                <td width="20%" style="border-collapse: collapse; text-align: left;">
-                                    <p class="ignored-style">{current_time_str}</p>
                                 </td>
                             </tr>
                         </table>
@@ -322,7 +341,7 @@
                 </tr>
                 <tr>
                     <td width="60%" style="background-color: #ffffff; border-collapse: collapse; color: #100f0f; min-width: 100%; padding: 0;">
-                        <p style=" margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
+                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
                             Fort de sept années d'expérience à travailler sur des
                             pipelines contre la corrosion en utilisant la protection
                             cathodique et les systèmes à courant imposé, je suis également
