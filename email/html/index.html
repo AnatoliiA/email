@@ -66,7 +66,6 @@
 
         .intro{
           line-height:1.2;
-          margin-top:10px;
           text-align: left;
           font-size:22px;
           font-family:Georgia,Arial,sans-serif;
@@ -74,6 +73,7 @@
         }
 
         .down-pass{
+            transform: translateX(1rem);
             word-wrap: break-word;
             /*overflow: auto;*/
         }
@@ -86,25 +86,71 @@
         .float-pass{
             float: left;
         }
+        .image-size {
+            width: 200px;
+            height: 200px;
+        }
 
-        @media all and (max-width: 599px) {
-            .container600 {
+        @media all and (max-width: 1000px) {
+            #cord {
+                width: 30%;
+                font-size: 18px;
+            }
+
+           .intro{
+              line-height:1.2;
+              font-size:20px;
+              margin-top: 0.3rem;
+            }
+
+           .down-pass{
+              overflow: hidden;
+              transform: translateX(2rem);
+           }
+
+           .passdiv{
+              transform: translateY(5rem);
+              overflow: auto;
+           }
+        }
+        @media all and (max-width: 899px) {
+            #image1 {
                 width: 100%;
-                --table-margin-right: 0;
-                mso-line-height-rule: exactly;
+            }
+            .image-size {
+                width: 159px;
+                height: 150px;
             }
 
-            .intro-image {
-                max-width: 100%; /* Ensure the image is responsive */
+            .intro{
+              line-height:1.2;
+              text-align: left;
+              font-size:17px;
+              overflow: hidden;
+              margin-top: 0.5rem;
+              text-indent: -2em;
+
             }
 
+            .down-pass{
+              overflow: hidden;
+              transform: translateX(-0.4rem);
+            }
+
+            .passdiv{
+              transform: translateY(2rem);
+              overflow: auto;
+            }
+
+        }
+        @media all and (max-width: 599px) {
             img {
                 display: none;
             }
 
             h1 {
-                padding-top: 0px;
-                padding-bottom: 0px;
+                padding-top: 0;
+                padding-bottom: 0;
             }
 
             p {
@@ -118,78 +164,28 @@
             .intro {
                 font-size: 14px;
                 line-height: 1.2;
-                text-align: left;
-                margin-top: 5px;
-                padding-top: 0;
-            }
-            .down-pass{
-              overflow: hidden;
-            }
-
-            .passdiv{
-              transform: translateX(6rem);
-              overflow: auto;
-            }
-        }
-
-        @media all and (max-width: 899px) {
-            .intro {
-                font-size: 14px;
-                line-height: 1.2;
-                text-align: left;
-                margin-top: 10px;
-                overflow-x: hidden;
-            }
-
-            #cord {
-                width: 30%;
-            }
-
-            #image1 {
-                width: 100%;
-            }
-
-            .felitation {
-                font-size: 18px;
-                text-indent: 0rem
+                margin-top: 0.5rem;
+                overflow-wrap: break-word;
             }
 
             .down-pass{
               overflow: hidden;
-              transform: translateX(1rem);
+              transform: translateX(2em);
             }
 
             .passdiv{
-              transform: translateX(2rem);
-              overflow: auto;
+              margin-top: 2rem;
+              transform: translateY(0rem);
             }
-
         }
-
-        @media all and (max-width: 1000px) {
-            #cord {
-                width: 30%;
-                font-size: 18px;
+        @media all and (max-width: 509px) {
+             img {
+                display: none;
             }
+         }
 
-           .intro{
-              line-height:1.2;
-              margin-top:10px;
-              text-align: left;
-              font-size:22px;
-              font-family:Georgia,Arial,sans-serif;
-            }
 
-           .down-pass{
-              overflow: hidden;
-              transform: translateX(1rem);
-           }
 
-           .passdiv{
-              transform: translateY(6rem);
-              overflow: auto;
-           }
-        }
     </style>
 
     <!--[if mso]>
@@ -233,7 +229,7 @@
     </style>
     <![endif]-->
 </head>
-<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #dde0e1; font-size: 0; line-height: 0; margin: 0; padding: 0;" xml:lang="en">
+<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #dde0e1; font-size: 0; line-height: 0; margin: 0; min-width: 100%; padding: 0;" xml:lang="en">
 <p class="client-specific">This is a special paragraph for specific email clients.</p>
 <div style="
         width: 100%;
@@ -264,162 +260,160 @@
       color: #3d3d3d;" role="presentation">
     <tr>
         <td style="padding: 0">
-<![endif]-->
-<table align="center" style="background-color: #fafdfe; border-collapse: collapse; border-spacing: 0; color: #3d3d3d; font-family: Helvetica, Arial, sans-serif; margin: 0 auto; max-width: 600px; width: 100%;">
-    <tr>
-        <td style="border-collapse: collapse; text-align: left; width: 100%;">
-            <table width="100%" role="presentation" style="border-collapse: collapse; border-spacing: 0; min-width: 80%;">
+        <![endif]-->
+            <table align="center" style="background-color: #fafdfe; border-collapse: collapse; border-spacing: 0; color: #3d3d3d; font-family: Helvetica, Arial, sans-serif; margin: 0 auto; max-width: 600px; width: 100%;">
                 <tr>
-                    <!--[if mso]>
-                    <table
-                        align="center"
-                        class="container1000"
-                        style="border-spacing: 0; border-collapse: collapse">
-                        <tr>
-                            <td width="30%" style="
-                                margin: 2rem 0 1rem 0;
-                                width: 30%;
-                                min-width: 300px;">
-                                <img
-                                        width="200"
-                                        height="200"
-                                        alt=""
-                                        id="image1"
-                                        src="capt.jpg"
-                                />
-                            </td>
-                            <td  width="60%" style="width: 60%">
-                                <h1 class="intro-mso">
-                                    Object: <span>Candidature spontanée</span><br/>
-                                </h1>
-                                <h1 class="intro-mso roboto-regular-italic">
-                                    Installateur de panneaux photovoltaïques<br/>
-                                </h1>
-                                <h1 class="intro-mso">
-                                    <p>Anatolii Kamarali</p>
-                                </h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <![endif]-->
-                    <!--[if !mso]><!-->
-                    <table style="border-collapse: collapse; border-spacing: 0;">
-                        <tr>
-                            <td width="60%" style="background-color: #ffffff; border-collapse: collapse; color: #100f0f; margin: 0; padding: 0;">
-                                <div class="down-pass" style="margin: 0; width: 100%;">
-                                     <div class="float-pass" style="padding-top: 30px;
-                                            margin: 0 0 0 1rem; width: 30%;">
-                                    <img alt width="200" height="200" src="capt.jpg" style="-ms-interpolation-mode: bicubic; border: 0;">
-                                    </div>
-                                    <div class="passdiv">
-                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: 0 0 0 1rem;">
-                                            Object: Candidature spontanée
-                                        </h3>
-                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: 0 0 0 1rem;">
-                                            Installateur de panneaux photovoltaïques
-                                        </h3>
-                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: 0 0 0 1rem;">Anatolii Kamarali</h3>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                    <!--<![endif]-->
-                </tr>
-                <tr>
-                    <td width="100%" style="background-color: #ffffff; border-collapse: collapse; margin: 0; max-width: 800px; padding-bottom: 20px; padding-top: 40px;">
-                        <table width="100%" role="presentation" style="border-collapse: collapse; border-spacing: 0;">
+                    <td style="border-collapse: collapse; text-align: left; width: 100%;">
+                        <table width="100%" role="presentation" style="border-collapse: collapse; border-spacing: 0; min-width: 80%;">
                             <tr>
-                                <td width="60%" style="border-collapse: collapse; margin: 0; text-align: left;">
-                                    <p style="margin: 0 0 0 2rem; text-indent: 5%;">
-                                        Bonjour {sex},
-                                    </p>
-                                </td>
+                                    <!--[if mso]>
+                                    <table
+                                        align="center"
+                                        class="container1000"
+                                        style="border-spacing: 0; border-collapse: collapse">
+                                        <tr>
+                                            <td width="30%" style="
+                                                margin: 2rem 0 1rem 0;
+                                                width: 30%;
+                                                min-width: 300px;">
+                                                <img
+                                                        width="200"
+                                                        height="200"
+                                                        alt=""
+                                                        id="image1"
+                                                        src="capt.jpg"
+                                                />
+                                            </td>
+                                            <td  width="60%" style="width: 60%">
+                                                <h1 class="intro-mso">
+                                                    Object: <span>Candidature spontanée</span><br/>
+                                                </h1>
+                                                <h1 class="intro-mso roboto-regular-italic">
+                                                    Installateur de panneaux photovoltaïques<br/>
+                                                </h1>
+                                                <h1 class="intro-mso">
+                                                    <p>Anatolii Kamarali</p>
+                                                </h1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <![endif]-->
+                                    <!--[if !mso]><!-->
+                                    <table style="border-collapse: collapse; border-spacing: 0;">
+                                        <tr>
+                                            <td width="60%" style="background-color: #ffffff; border-collapse: collapse; color: #100f0f; margin: 0; padding: 0;">
+                                                <div class="down-pass" style="margin: 0; width: 100%;">
+                                                     <div class="float-pass" style="margin: 0 0 0 1rem; width: 30%;">
+                                                         <img alt src="capt.jpg" style="-ms-interpolation-mode: bicubic; border: 0;">
+                                                    </div>
+                                                    <div class="passdiv">
+                                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: 0.1rem 0 0 1rem;">
+                                                            Object: Candidature spontanée
+                                                        </h3>
+                                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: .1rem 0 0 1rem;">
+                                                            Installateur de panneaux photovoltaïques
+                                                        </h3>
+                                                        <h3 style="font-family: Georgia, Arial, sans-serif; line-height: 100%; max-width: 800px; padding: .1rem 0 0 1rem;">Anatolii Kamarali</h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--<![endif]-->no
+                                </tr>
+                                <tr>
+                                    <td width="100%" style="background-color: #ffffff; border-collapse: collapse; margin: 0; max-width: 800px; padding-bottom: 20px; padding-top: 40px;">
+                                        <table width="100%" role="presentation" style="border-collapse: collapse; border-spacing: 0;">
+                                            <tr>
+                                                <td width="60%" style="border-collapse: collapse; margin: 0; text-align: left;">
+                                                    <p style="margin: 0 0 0 2rem; text-indent: 5%;">
+                                                        Bonjour {sex},
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="background-color: #ffffff; border-collapse: collapse; color: #100f0f; min-width: 100%; padding: 0;">
+                                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
+                                            Fort de sept années d'expérience à travailler sur des
+                                            pipelines contre la corrosion en utilisant la protection
+                                            cathodique et les systèmes à courant imposé, je suis également
+                                            capable d’assimiler rapidement d’autres fonctionnements tels
+                                            que les panneaux photovoltaïques (je pense en effet que si
+                                            l’on est un bon spécialiste dans un domaine, il suffit de
+                                            connaitre les produits et travailler pour donner de bons
+                                            résultats dans un autre).
+                                        </p>
+                                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
+                                            Par la suite, j'ai axé mes compétences dans le domaine des
+                                            panneaux photovoltaïques, en suivant 2 formations, une aux
+                                            Pays-Bas, l'autre en Suisse, formations que j'ai réussies.
+                                            J’ai le gout de l’effort et des responsabilités. Intégrer une
+                                            équipe enthousiaste et dynamique serait pour moi une
+                                            motivation supplémentaire.
+                                        </p>
+                                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
+                                            Je me permets donc de poser ma candidature en tant
+                                            qu'installateur de panneaux photovoltaïques, et je vous
+                                            adresse, à cet effet, mon cv en pièce jointe.
+                                        </p>
+                                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
+                                            En espérant qu’une opportunité se présente à votre siège ou
+                                            dans l’une de vos agences, je serais heureux de vous présenter
+                                            mon parcours.
+                                        </p>
+                                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
+                                            Dans cette attente je vous prie de croire, Monsieur, à
+                                            l’assurance de ma considération distinguée.
+                                        </p>
+                                        <blockquote style="border: 0 none; border-left: 16px solid #efefef; color: inherit; font-family: Georgia, Arial, sans-serif; font-size: 20px; font-style: italic; line-height: 1.5; margin: 30px 0; padding: 2rem 1rem 3rem 2rem; text-align: right; width: 60%;">
+                                            Kamarali Anatolii.<br>
+                                            0797629795
+                                            <br>
+                                        </blockquote>
+                                        <h3 style="background-color: #bebdbd; color: #ffffff; font-family: Raleway, Helvetica; font-size: 20px; letter-spacing: 3.5px; line-height: 24px; margin: 0px; max-width: 800px; opacity: 0.67; padding-bottom: 16px; padding-top: 10px; text-align: center; text-transform: uppercase;">
+                                                .traduction en anglais
+                                        </h3>
+                                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 20px">
+                                            Dear Sir or Madam With seven years' experience of working on
+                                            pipelines to protect against corrosion using cathodic
+                                            protection and impressed current systems, I am also capable of
+                                            quickly assimilating other operations such as photovoltaic
+                                            panels (I believe that if you are a good specialist in one
+                                            field, you only need to know the products and work to give
+                                            good results in another). I then focused my skills on
+                                            photovoltaic panels, taking 2 training courses, one in the
+                                            Netherlands and the other in Switzerland, both of which I
+                                            successfully completed. I have a taste for hard work and
+                                            responsibility. Joining an enthusiastic and dynamic team would
+                                            be an additional motivation for me. I would therefore like to
+                                            apply for a job as a photovoltaic panel installer, and am
+                                            enclosing my CV. I hope that an opportunity will arise at your
+                                            head office or in one of your branches, and would be happy to
+                                            tell you more about my career. Please accept, Sir, the
+                                            assurance of my highest consideration. Kamarali Anatolii.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-collapse: collapse; width: 80%;">
+                                        <blockquote style="border: 0 none; border-left: 16px solid #efefef; color: inherit; font-family: Georgia, Arial, sans-serif; font-size: 20px; font-style: italic; line-height: 1.5; margin: 30px 0; padding: 2rem 1rem 3rem 2rem; text-align: right; width: 60%;">
+                                            Kamarali Anatolii <br>
+                                            0797629795
+                                            <br>
+                                        </blockquote>
+                                    </td>
+
                             </tr>
                         </table>
                     </td>
                 </tr>
-                <tr>
-                    <td width="60%" style="background-color: #ffffff; border-collapse: collapse; color: #100f0f; min-width: 100%; padding: 0;">
-                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
-                            Fort de sept années d'expérience à travailler sur des
-                            pipelines contre la corrosion en utilisant la protection
-                            cathodique et les systèmes à courant imposé, je suis également
-                            capable d’assimiler rapidement d’autres fonctionnements tels
-                            que les panneaux photovoltaïques (je pense en effet que si
-                            l’on est un bon spécialiste dans un domaine, il suffit de
-                            connaitre les produits et travailler pour donner de bons
-                            résultats dans un autre).
-                        </p>
-                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 0; text-indent: 5%;">
-                            Par la suite, j'ai axé mes compétences dans le domaine des
-                            panneaux photovoltaïques, en suivant 2 formations, une aux
-                            Pays-Bas, l'autre en Suisse, formations que j'ai réussies.
-                            J’ai le gout de l’effort et des responsabilités. Intégrer une
-                            équipe enthousiaste et dynamique serait pour moi une
-                            motivation supplémentaire.
-                        </p>
-                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px;
-                    text-indent: 5%;
-                  ">
-                            Je me permets donc de poser ma candidature en tant
-                            qu'installateur de panneaux photovoltaïques, et je vous
-                            adresse, à cet effet, mon cv en pièce jointe.
-                        </p>
-                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
-                            En espérant qu’une opportunité se présente à votre siège ou
-                            dans l’une de vos agences, je serais heureux de vous présenter
-                            mon parcours.
-                        </p>
-                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 10px; text-indent: 5%;">
-                            Dans cette attente je vous prie de croire, Monsieur, à
-                            l’assurance de ma considération distinguée.
-                        </p>
-                        <blockquote style="border: 0 none; border-left: 16px solid #efefef; color: inherit; font-family: Georgia, Arial, sans-serif; font-size: 20px; font-style: italic; line-height: 1.5; margin: 30px 0; padding: 2rem 1rem 3rem 2rem; text-align: right; width: 60%;">
-                            Kamarali Anatolii.<br>
-                            0797629795
-                            <br>
-                        </blockquote>
-                        <h3 style="background-color: #bebdbd; color: #ffffff; font-family: Raleway, Helvetica; font-size: 20px; letter-spacing: 3.5px; line-height: 24px; margin: 0px; max-width: 800px; opacity: 0.67; padding-bottom: 16px; padding-top: 10px; text-align: center; text-transform: uppercase;">
-                            .traduction en anglais
-                        </h3>
-                        <p style="margin: 0 2rem 0 2rem; padding-bottom: 20px">
-                            Dear Sir or Madam With seven years' experience of working on
-                            pipelines to protect against corrosion using cathodic
-                            protection and impressed current systems, I am also capable of
-                            quickly assimilating other operations such as photovoltaic
-                            panels (I believe that if you are a good specialist in one
-                            field, you only need to know the products and work to give
-                            good results in another). I then focused my skills on
-                            photovoltaic panels, taking 2 training courses, one in the
-                            Netherlands and the other in Switzerland, both of which I
-                            successfully completed. I have a taste for hard work and
-                            responsibility. Joining an enthusiastic and dynamic team would
-                            be an additional motivation for me. I would therefore like to
-                            apply for a job as a photovoltaic panel installer, and am
-                            enclosing my CV. I hope that an opportunity will arise at your
-                            head office or in one of your branches, and would be happy to
-                            tell you more about my career. Please accept, Sir, the
-                            assurance of my highest consideration. Kamarali Anatolii.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="border-collapse: collapse; width: 80%;">
-                        <blockquote style="border: 0 none; border-left: 16px solid #efefef; color: inherit; font-family: Georgia, Arial, sans-serif; font-size: 20px; font-style: italic; line-height: 1.5; margin: 30px 0; padding: 2rem 1rem 3rem 2rem; text-align: right; width: 60%;">
-                            Kamarali Anatolii <br>
-                            0797629795
-                            <br>
-                        </blockquote>
-                    </td>
-                </tr>
             </table>
+        <!--[if mso]>
         </td>
     </tr>
-</table>
-<!--[if mso]>
-</td>
-</tr>
 </table>
 <![endif]-->
 </body>

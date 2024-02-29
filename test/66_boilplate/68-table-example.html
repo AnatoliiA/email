@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Spacing Example</title>
+</head>
+<body>
+
+  <!-- Typical / dated way.-->
+  <table border="1" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>table data cell 1</td>
+      <td>table data cell 2</td>
+      <td>table data cell 3</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- One less attribute, border-collapse replaces cellspacing and cellpadding is still applying padding:0; to the <td> table cells. -->
+  <table border="1" style="border-collapse: collapse;" cellpadding="0">
+    <tr>
+      <td>table data cell 1</td>
+      <td>table data cell 2</td>
+      <td>table data cell 3</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- Simple approach with CSS. border-collapse:collapse; is only needed for the main table while border-spacing:0; can be added to all tables and is used on tables within the main table. -->
+  <table border="1" style="border-collapse: collapse;">
+    <tr>
+      <td style="padding: 0;">table data cell 1</td>
+      <td style="padding: 0;">table data cell 2</td>
+      <td style="padding: 0;">table data cell 3</td>
+    </tr>
+  </table>
+
+<br>
+  <!--======= WITHOUT BORDER =======-->
+<br>
+
+    <!-- Typical / dated way.-->
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td>table data cell 1</td>
+        <td>table data cell 2</td>
+        <td>table data cell 3</td>
+      </tr>
+    </table>
+  
+    <br>
+  
+    <!-- One less attribute, border-collapse replaces cellspacing and cellpadding is still applying padding:0; to the <td> table cells. -->
+    <table style="border-collapse: collapse;" cellpadding="0">
+      <tr>
+        <td>table data cell 1</td>
+        <td>table data cell 2</td>
+        <td>table data cell 3</td>
+      </tr>
+    </table>
+  
+    <br>
+  
+    <!-- Simple approach with CSS. border-collapse:collapse; is only needed for the main table while border-spacing:0; can be added to all tables and is used on tables within the main table. -->
+    <table style="border-collapse: collapse;">
+      <tr>
+        <td style="padding: 0;">table data cell 1</td>
+        <td style="padding: 0;">table data cell 2</td>
+        <td style="padding: 0;">table data cell 3</td>
+      </tr>
+    </table>
+
+    <!-- Article: https://www.codeinwp.com/snippets/table-cellpadding-and-cellspacing-with-css/ -->
+          <style>
+            table {
+              table-layout: fixed;
+              width: 100%;
+
+            }
+              th, td {
+                border: 1px solid black;
+                overflow: auto;
+              }
+          </style>
+
+
+        <table>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+          <tr>
+            <td>This is a long piece
+              wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwof text that will not
+              cause the cell to expand.</td>
+            <td>This cell contains shorter text.</td>
+            <td>More text.</td>
+          </tr>
+        </table>
+
+</body>
+</html>
